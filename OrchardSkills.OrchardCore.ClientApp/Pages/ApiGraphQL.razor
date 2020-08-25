@@ -1,7 +1,7 @@
 ﻿@page "/api/grapgql"
 @inject HttpClient Http
 
-<button onclick=@(GetBlogPosts())>Get Blog Posts</button>
+<button class="btn btn-primary" onclick=@(GetBlogPosts())>Get Blog Posts</button>
 
 @functions {
     private async Task GetBlogPosts()
