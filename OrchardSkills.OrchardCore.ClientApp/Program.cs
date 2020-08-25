@@ -17,6 +17,7 @@ namespace OrchardSkills.OrchardCore.ClientApp
         {
             var builder = WebAssemblyHostBuilder.CreateDefault(args);
             builder.RootComponents.Add<Counter>("my-counter");
+            builder.RootComponents.Add<ApiGraphQL>("api-graphql");
             builder.Services.AddTransient(sp => new HttpClient { BaseAddress = new Uri(builder.HostEnvironment.BaseAddress) });
 
             await builder.Build().RunAsync();

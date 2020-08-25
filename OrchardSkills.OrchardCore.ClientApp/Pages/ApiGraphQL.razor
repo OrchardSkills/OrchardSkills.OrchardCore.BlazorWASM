@@ -1,0 +1,12 @@
+﻿@page "/api/grapgql"
+@inject HttpClient Http
+
+<button onclick=@(GetBlogPosts())>Get Blog Posts</button>
+
+@functions {
+    private async Task GetBlogPosts()
+    {
+        var response = await Http.GetStringAsync("/api/graphql");
+        Console.WriteLine(response);
+    }
+}
