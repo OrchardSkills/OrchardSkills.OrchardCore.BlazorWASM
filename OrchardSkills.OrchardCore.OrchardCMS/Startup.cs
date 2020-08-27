@@ -46,7 +46,8 @@ namespace OrchardSkills.OrchardCore.OrchardCMS
             app.UseBlazorFrameworkFiles();
             app.UseStaticFiles();
             app.UseOrchardCore();
-            app.UseRouting();
+
+            //app.UseRouting();
 
             //app.UseAuthorization();
 
