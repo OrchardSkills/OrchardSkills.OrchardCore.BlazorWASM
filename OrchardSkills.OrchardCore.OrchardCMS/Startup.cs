@@ -23,7 +23,6 @@ namespace OrchardSkills.OrchardCore.OrchardCMS
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            //services.AddRazorPages();
             services.AddOrchardCms();
         }
 
@@ -46,15 +45,6 @@ namespace OrchardSkills.OrchardCore.OrchardCMS
             app.UseBlazorFrameworkFiles();
             app.UseStaticFiles();
             app.UseOrchardCore();
-
-            //app.UseRouting();
-
-            //app.UseAuthorization();
-
-            //app.UseEndpoints(endpoints =>
-            //{
-            //    endpoints.MapRazorPages();
-            //});
         }
     }
 }
